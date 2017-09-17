@@ -1,6 +1,9 @@
 # Expense-Manager-Backend
 
-For frontend code visit https://github.com/bhavesh-jadav/Expense-Manager-Frontend
+Check out the following links for more information  
+Website Url: https://bhavesh-jadav.github.io/Expense-Manager/  
+API Base Url: https://bhaveshemanager.herokuapp.com/  
+Frontend source code: https://github.com/bhavesh-jadav/Expense-Manager-Frontend  
 
 This web app allows user to manager simple day to day expenses.
 `Backend` folder contains flask web app components. Structure for `Backend` folder is given below
