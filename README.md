@@ -65,6 +65,5 @@ Base Url `https://bhaveshemanager.herokuapp.com`
 1. Add currency support 
 2. Add sort parameter in api
 3. Add code for admin part
-4. Add front end
-5. Use better error handling
+4. Use better error handling
 
