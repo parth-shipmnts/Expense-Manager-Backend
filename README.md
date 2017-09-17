@@ -1,4 +1,6 @@
-# Expense-Manager
+# Expense-Manager-Backend
+
+For frontend code visit https://github.com/bhavesh-jadav/Expense-Manager-Frontend
 
 This web app allows user to manager simple day to day expenses.
 `Backend` folder contains flask web app components. Structure for `Backend` folder is given below
@@ -23,7 +25,7 @@ This web app allows user to manager simple day to day expenses.
 ```
 ### Api Documentation
 
-Base Url `https://bhaveshemanager.herokuapp.com`  
+Base Url: `https://bhaveshemanager.herokuapp.com`  
 **API BODY MUST HAVE JSON FORMAT WHEREVER NEEDED.**  
 **AUTHORIZATION TOKEN WHICH YOU GET AFTER LOGIN MUST BE PASS AS AN AUTHORIZATION HEADER IN EACH REQUEST.**
 
