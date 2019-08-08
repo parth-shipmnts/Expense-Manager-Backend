@@ -53,7 +53,7 @@ def register():
                     res = create_user(register_form)
                     return jsonify(message="Successfully added new user", user=res.data), 202
                 except Exception as e:
-                    print e
+                    print(e)
                     return jsonify(message="Unable add user now"), 500
         else:
             return jsonify({"message":"User data validation failed"}), 422

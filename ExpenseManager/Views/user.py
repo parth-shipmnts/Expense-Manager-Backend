@@ -29,7 +29,7 @@ def expense_details():
             expenses = get_expense_details(g.user,)
         return jsonify(expenses), 200
     except Exception as e:
-        print e
+        print(e)
         return jsonify(message='unable to get the data'), 500
 
 @app.route(pre + '/expense_details/<string:category_name>', methods=['POST'])
@@ -52,7 +52,7 @@ def expense_details_category_wise(category_name):
             expenses = get_expense_details(g.user, category)
             return jsonify(expenses), 200
     except Exception as e:
-        print e
+        print(e)
         return jsonify(message='unable to get the data'), 500
 
 @app.route(pre + '/categories', methods=['GET'])
@@ -65,7 +65,7 @@ def categories_details():
         categories = get_categories(g.user)
         return jsonify(categories=[cat.name.title() for cat in categories]), 200
     except Exception as e:
-        print e
+        print(e)
         return jsonify(message='unable to get the data'), 500
 
 
@@ -87,7 +87,7 @@ def add_expense():
         else:
             return jsonify(message='request is not in json format or body is empty'), 400
     except Exception as e:
-        print e
+        print(e)
         return jsonify(message='unable to add new resource'), 500
 
 @app.route(pre + '/add_category', methods=['POST'])
@@ -108,5 +108,5 @@ def add_category():
         else:
             return jsonify(message='request is not in json format or body is empty'), 400
     except Exception as e:
-        print e
+        print(e)
         return jsonify(message='unable to add new resource'), 500

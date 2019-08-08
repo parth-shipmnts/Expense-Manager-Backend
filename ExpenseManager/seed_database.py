@@ -27,8 +27,8 @@ def seed_postgres():
             db.session.add(admin)
             db.session.commit()
         except Exception as e:
-            print e
-            print "no config file found or fields are misssing from config file"
+            print(e)
+            print("no config file found or fields are misssing from config file")
 
         #defining normal user
 

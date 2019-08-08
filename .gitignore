@@ -42,6 +42,4 @@ testem.log
 Thumbs.db
 
 *.pyc
-/config.json
-/test_users.json
 /.vscode/

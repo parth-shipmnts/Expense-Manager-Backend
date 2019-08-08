@@ -10,8 +10,8 @@ try:
     with open('config.json') as _config:
         config = load(_config)
 except Exception as e:
-    print e
-    exit('Error loading config.json. Make sure that it is present in root folder and is in proper formate')
+    print(e)
+    exit('Error loading config.json. Make sure that it is present in root folder and is in proper format')
 
 app = Flask(__name__)
 

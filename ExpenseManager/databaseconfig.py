@@ -10,7 +10,7 @@ def connect_postgres():
     try:
         postgres_url = config['postgres_url']
     except Exception as e:
-        print "no 'postgres_url' field in config or no config file is present"
+        print("no 'postgres_url' field in config or no config file is present")
         raise e
 
     try:
@@ -19,5 +19,5 @@ def connect_postgres():
         db = SQLAlchemy(app)
         return db
     except Exception as e:
-        print "postgres database connection error"
+        print("postgres database connection error")
     
