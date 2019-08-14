@@ -1,5 +1,6 @@
 ﻿from flask_sqlalchemy import SQLAlchemy
 from ExpenseManager import app, config
+import os
 
 def connect_postgres():
     '''
@@ -8,7 +9,7 @@ def connect_postgres():
     of project
     '''
     try:
-        postgres_url = config['postgres_url']
+        postgres_url = os.environ.get('DATABASE_URL')
     except Exception as e:
         print("no 'postgres_url' field in config or no config file is present")
         raise e
