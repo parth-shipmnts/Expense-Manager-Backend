@@ -1,1 +1,1 @@
-web: python startup.py runserver 0.0.0.0:5656
+web: python startup.py runserver 0.0.0.0:5000

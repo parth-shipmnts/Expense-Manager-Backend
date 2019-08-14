@@ -17,4 +17,4 @@ seed_postgres()
 CORS(app)
 
 if __name__ == '__main__':
-    app.run('localhost', 5656, debug=True)
+    app.run('localhost', 5000, debug=True)
