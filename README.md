@@ -1,10 +1,5 @@
 # Expense-Manager-Backend
 
-Check out the following links for more information  
-Website Url: https://bhavesh-jadav.github.io/Expense-Manager/  
-API Base Url: https://bhaveshemanager.herokuapp.com/  
-Frontend source code: https://github.com/bhavesh-jadav/Expense-Manager-Frontend  
-
 This web app allows user to manager simple day to day expenses.
 `Backend` folder contains flask web app components. Structure for `Backend` folder is given below
 
@@ -28,7 +23,6 @@ This web app allows user to manager simple day to day expenses.
 ```
 ### Api Documentation
 
-Base Url: `https://bhaveshemanager.herokuapp.com`  
 **API BODY MUST HAVE JSON FORMAT WHEREVER NEEDED.**  
 **AUTHORIZATION TOKEN WHICH YOU GET AFTER LOGIN MUST BE PASS AS AN AUTHORIZATION HEADER IN EACH REQUEST.**
 
@@ -65,6 +59,14 @@ Base Url: `https://bhaveshemanager.herokuapp.com`
 4. Visual Studio Code IDE
 
 **Check `requirements.txt` for python packages used**
+
+**Installing Dependencies**
+
+`pip install -r requirements.txt`
+
+**Starting Server**
+
+`python startup.py`
 
 **Future scope and improvements:**  
 1. Add currency support 
