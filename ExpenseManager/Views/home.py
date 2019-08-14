@@ -27,7 +27,8 @@ def login():
             user = User.query.filter_by(email=login_form.data['email']).first()
             if user and user.verify_password(login_form.data['password']):
                 auth_token = _generate_token(user)
-                return jsonify(token=auth_token), 200
+                print(auth_token, 'at')
+                return jsonify(token=auth_token.decode('utf-8')), 200
             else:
                 return jsonify(message="either email or password is wrong"), 400
         else:

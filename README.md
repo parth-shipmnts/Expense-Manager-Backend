@@ -48,9 +48,34 @@ This web app allows user to manager simple day to day expenses.
     "end_date": "2016-05-01"
 }
 ```
-`/api/v1/user/categories`: Get all the categories that belongs to logged in user.  
-`/api/v1/user/add_expense`: Add expense for logged in user.  
+`/api/v1/user/categories`: Get all the categories that belongs to logged in user.
+
+- GET API
+- Requires Authorization Header.
+
+`/api/v1/user/add_expense`: Add expense for logged in user.
+
+- POST API
+- Requires Authorization Header.
+
+```
+{
+	"category": "Food",
+	"amount": 190,
+	"description": "Food"
+}
+```
 `/api/v1/user/add_category`: Add new category for logged in user.
+
+- POST API
+- Requires Authorization Header.
+
+
+```
+{
+	"name": "Movies"
+}
+```
 
 **Tech used:**  
 1. Flask
@@ -67,10 +92,3 @@ This web app allows user to manager simple day to day expenses.
 **Starting Server**
 
 `python startup.py`
-
-**Future scope and improvements:**  
-1. Add currency support 
-2. Add sort parameter in api
-3. Add code for admin part
-4. Use better error handling
-
