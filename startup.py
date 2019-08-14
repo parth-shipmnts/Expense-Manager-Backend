@@ -6,7 +6,7 @@ from ExpenseManager import app, models
 from ExpenseManager.Views import *
 from ExpenseManager.seed_database import seed_postgres
 from flask_cors import CORS
-
+import os
 #wtform json config
 wtforms_json.init()
 
@@ -17,4 +17,4 @@ seed_postgres()
 CORS(app)
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', 5000, debug=True)
+    app.run('0.0.0.0', int(os.environ.get('PORT')), debug=True)
